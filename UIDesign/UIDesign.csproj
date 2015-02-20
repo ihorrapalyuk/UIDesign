@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProjectTypeGuids>{6BC8ED88-2882-458C-8E55-DFD12B67127B};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{FD312164-15EE-4563-99F1-555D4765DBEC}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>UIDesign</RootNamespace>
+    <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
+    <AssemblyName>UIDesign</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>i386</MtouchArch>
+    <MtouchLink>None</MtouchLink>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhoneSimulator\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <MtouchArch>i386</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <MtouchLink>None</MtouchLink>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\iPhone\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignKey>iPhone Developer</CodesignKey>
+    <MtouchDebug>true</MtouchDebug>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <MtouchArch>ARMv7</MtouchArch>
+    <ConsolePause>false</ConsolePause>
+    <CodesignKey>iPhone Developer</CodesignKey>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Ad-Hoc|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\Ad-Hoc</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <IpaIncludeArtwork>true</IpaIncludeArtwork>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+    <CodesignProvision>Automatic:AdHoc</CodesignProvision>
+    <BuildIpa>true</BuildIpa>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'AppStore|iPhone' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\iPhone\AppStore</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+    <MtouchArch>ARMv7</MtouchArch>
+    <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
+    <CodesignProvision>Automatic:AppStore</CodesignProvision>
+    <CodesignKey>iPhone Distribution</CodesignKey>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="monotouch" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+    <Folder Include="Cells\" />
+    <Folder Include="Rows\" />
+    <Folder Include="Entity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Info.plist" />
+    <None Include="Entitlements.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Main.cs" />
+    <Compile Include="AppDelegate.cs" />
+    <Compile Include="UIDesignController.cs" />
+    <Compile Include="UIDesignController.designer.cs">
+      <DependentUpon>UIDesignController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainController.cs" />
+    <Compile Include="MainController.designer.cs">
+      <DependentUpon>MainController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\CellPayment.cs" />
+    <Compile Include="Cells\CellPayment.designer.cs">
+      <DependentUpon>CellPayment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cells\CallNote.cs" />
+    <Compile Include="Entity\entPayment.cs" />
+    <Compile Include="Entity\entNote.cs" />
+    <Compile Include="Cells\CallNote.designer.cs">
+      <DependentUpon>CallNote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rows\RowNote.cs" />
+    <Compile Include="Rows\RowPayment.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.MonoTouch.CSharp.targets" />
+  <ItemGroup>
+    <InterfaceDefinition Include="UIDesignController.xib" />
+    <InterfaceDefinition Include="MainController.xib" />
+    <InterfaceDefinition Include="Cells\CellPayment.xib" />
+    <InterfaceDefinition Include="Cells\CallNote.xib" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\arrow-down-01-128.png" />
+    <BundleResource Include="Resources\photo.png" />
+    <BundleResource Include="Resources\Search.png" />
+    <BundleResource Include="Resources\dot.png" />
+    <BundleResource Include="Resources\blueDot.jpg" />
+    <BundleResource Include="Resources\Chack.png" />
+    <BundleResource Include="Resources\Warning.png" />
+    <BundleResource Include="Resources\testImage1.png" />
+    <BundleResource Include="Resources\testImage2.png" />
+    <BundleResource Include="Resources\Lock.png" />
+    <BundleResource Include="Resources\Plus.png" />
+    <BundleResource Include="Resources\unlock.png" />
+  </ItemGroup>
+</Project>

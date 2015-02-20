@@ -1,0 +1,29 @@
+# Version: 8.6.1.20 (3b3ef43)
+# [first argument, ignore] # /Projects/IOS/uidesign/UIDesign/bin/iPhoneSimulator/Debug/mtouch.exe
+/Library/Frameworks/Xamarin.iOS.framework/Versions/8.6.1.20/bin/mtouch-64 \
+	-sdkroot \
+	/Applications/Xcode.app/Contents/Developer \
+	--cache \
+	/Projects/IOS/uidesign/UIDesign/obj/iPhoneSimulator/Debug/mtouch-cache \
+	--executable \
+	UIDesign \
+	--nomanifest \
+	--nosign \
+	-sim \
+	/Projects/IOS/uidesign/UIDesign/bin/iPhoneSimulator/Debug/UIDesign.app \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Xml.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/System.Core.dll \
+	-r \
+	/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/mono/2.1/monotouch.dll \
+	-debug \
+	-nolink \
+	-sdk \
+	8.1 \
+	-targetver \
+	7.0 \
+	--abi=i386 \
+	/Projects/IOS/uidesign/UIDesign/bin/iPhoneSimulator/Debug/UIDesign.exe \

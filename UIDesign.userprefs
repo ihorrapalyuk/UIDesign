@@ -1,0 +1,15 @@
+﻿<Properties StartupItem="UIDesign/UIDesign.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPad2.8.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="UIDesign/UIDesignController.cs">
+    <Files>
+      <File FileName="UIDesign/UIDesignController.cs" Line="21" Column="21" />
+      <File FileName="UIDesign/Rows/RowNote.cs" Line="4" Column="4" />
+      <File FileName="UIDesign/Rows/RowPayment.cs" Line="44" Column="44" />
+      <File FileName="UIDesign/Entity/entPayment.cs" Line="28" Column="28" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

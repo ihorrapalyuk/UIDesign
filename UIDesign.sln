@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIDesign", "UIDesign\UIDesign.csproj", "{FD312164-15EE-4563-99F1-555D4765DBEC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|iPhoneSimulator = Release|iPhoneSimulator
+		Debug|iPhone = Debug|iPhone
+		Release|iPhone = Release|iPhone
+		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		AppStore|iPhone = AppStore|iPhone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Ad-Hoc|iPhone.ActiveCfg = Ad-Hoc|iPhone
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Ad-Hoc|iPhone.Build.0 = Ad-Hoc|iPhone
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.AppStore|iPhone.ActiveCfg = AppStore|iPhone
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.AppStore|iPhone.Build.0 = AppStore|iPhone
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Debug|iPhone.ActiveCfg = Debug|iPhone
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Debug|iPhone.Build.0 = Debug|iPhone
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Debug|iPhoneSimulator.ActiveCfg = Debug|iPhoneSimulator
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Debug|iPhoneSimulator.Build.0 = Debug|iPhoneSimulator
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Release|iPhone.ActiveCfg = Release|iPhone
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Release|iPhone.Build.0 = Release|iPhone
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Release|iPhoneSimulator.ActiveCfg = Release|iPhoneSimulator
+		{FD312164-15EE-4563-99F1-555D4765DBEC}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
+	EndGlobalSection
+EndGlobal
